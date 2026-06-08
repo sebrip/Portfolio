@@ -26,7 +26,7 @@ function Collapse({ title, text }) {
       <div className="collapse-header" onClick={toggleCollapse}>
         <h2>{title}</h2>
         {/* Utiliser ArrowDown en fonction de l'état "open" */}
-        <img src={ArrowDown} alt={'Flêche haut'} className="arrow-icon" />
+        <img src={ArrowDown} alt="" aria-hidden="true" className="arrow-icon" />
       </div>
       <div
         className="collapse-text-container"

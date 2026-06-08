@@ -1,6 +1,6 @@
 #skills {
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     max-width: 65rem;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 
     .skills-dropdown {
         margin: 1.5rem;
-        width: 100vw;
+        width: 100%;
         max-width: 80%;
 
         .skills-dropdown-header {

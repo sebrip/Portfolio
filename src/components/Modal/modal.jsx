@@ -4,18 +4,12 @@ import './modal.scss';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 function MyModal({ isOpen, onRequestClose, images }) {
-  console.log("Images in MyModal:", images);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const closeModal = () => {
     setCurrentSlide(0);
     onRequestClose();
   };
-
-  const openModal = () => {
-    setCurrentSlide(0); // Initialisation de currentSlide
-  };
-
 
   // Fonction pour passer à la diapositive suivante
   const nextSlide = () => {
@@ -34,12 +28,13 @@ function MyModal({ isOpen, onRequestClose, images }) {
 
   // Utilise un effet pour définir un intervalle de défilement automatique toutes les 7 secondes
   useEffect(() => {
+    if (!images || images.length <= 1) return;
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length)
     }, 7000)
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images]);
 
   return (
     <>

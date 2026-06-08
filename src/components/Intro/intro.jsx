@@ -8,8 +8,8 @@ const Intro = () => {
         <section id="intro">
             <div className='introContent'>
                 <span className='hello'>Bonjour, </span>
-                <span className='introText'>Je suis <span className='introName'>Sébastien</span> <br />Développeur Web junior</span>
-                <p className='introP'>Après un an de formation spécialisé Javascript/React.js/Node.js,<br />je me lance dans l'aventure du monde formidable du Web Development</p>
+                <span className='introText'>Je suis <span className='introName'>Sébastien</span> <br />Développeur — Agents IA</span>
+                <p className='introP'>Fort d'une formation en développement web (JavaScript / React.js / Node.js),<br />je me spécialise dans la conception d'applications propulsées par des agents IA en Python.</p>
                 <button className="btn" onClick={() => {
                     document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
                 }}>

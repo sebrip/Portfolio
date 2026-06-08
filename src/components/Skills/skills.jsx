@@ -7,16 +7,14 @@ import JsScript from '../../assets/icons8-javascript-48.png'
 import ReactLogo from '../../assets/icons8-react-a-javascript-library-for-building-user-interfaces-48.png'
 import NodeLogo from '../../assets/icons8-node-js-48.png'
 import MongoLogo from '../../assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png'
+import { SiPython, SiClaude, SiOpenai } from 'react-icons/si'
 
 const Skills = () => {
     return (
         <section id='skills'>
-            <span className='skillTitle'>Mes services</span>
-            <span className='skillDesc'>Je suis un développeur Web junior passionné. J'ai récemment terminé une formation intensive dans laquelle j'ai acquis des compétences en HTML, CSS, Javascript, React.js, Node.js.
-            J'ai également appris à planifier et gérer des projets en utilisant la méthodologie Agile, ainsi qu'à optimiser et déboguer du code.
-            De plus, j'ai mis en place un système de base de données NoSQL avec MongoDB.
-            Motivé par le défi d'apprendre et de m'adapter dans le domaine en constante évolution, je suis toujours à la recherche de nouvelles opportunités pour appliquer et améliorer mes compétences du développement web.
-            N'hésitez pas à parcourir mon portfolio pour découvrir certains des projets sur lesquels j'ai travaillé !</span>
+            <span className='skillTitle'>Mes compétences</span>
+            <span className='skillDesc'>Développeur web passionné, j'ai suivi une formation intensive où j'ai acquis des compétences en HTML, CSS, JavaScript, React.js et Node.js, ainsi qu'en gestion de projet Agile et en bases de données NoSQL avec MongoDB.
+            Toujours curieux et motivé par l'apprentissage, je cherche de nouvelles opportunités pour appliquer et faire progresser mes compétences. Bonne visite !</span>
 
             <div className='skills-dropdown'>
                 <Collapse
@@ -53,7 +51,7 @@ const Skills = () => {
                         React
                         </div>
                     }
-                        text="En tant que développeur junior, j'utilise React, une bibliothèque JavaScript, pour créer des interfaces web interactives et conviviales. Ma maîtrise de React se traduit par la création de composants réutilisables, l'amélioration de la réactivité des applications et la collaboration au sein d'équipes de développement. Mon objectif est de contribuer à des projets innovants et d'apprendre continuellement pour progresser en tant que développeur web."
+                        text="J'utilise React, une bibliothèque JavaScript, pour créer des interfaces web interactives et conviviales. Ma maîtrise de React se traduit par la création de composants réutilisables et l'amélioration de la réactivité des applications. Mon objectif est de contribuer à des projets innovants et d'apprendre continuellement pour progresser en tant que développeur."
                 />
                 <Collapse
                     title={
@@ -71,7 +69,34 @@ const Skills = () => {
                         MongoDB
                         </div>
                     }
-                        text="En tant que développeur junior, j'intègre MongoDB dans mes projets pour gérer efficacement les bases de données NoSQL. Ma familiarité avec MongoDB me permet de stocker et de récupérer des données de manière flexible et évolutive. J'utilise MongoDB pour créer des applications web robustes avec une gestion efficace des données, ce qui renforce ma capacité à fournir des solutions de base de données de haute qualité pour des applications modernes."
+                        text="J'intègre MongoDB dans mes projets pour gérer efficacement les bases de données NoSQL. Cela me permet de stocker et de récupérer des données de manière flexible et évolutive, et de créer des applications web robustes avec une gestion efficace des données."
+                />
+                <Collapse
+                    title={
+                        <div className='skills-dropdown-header'>
+                        <SiPython className='skills-dropdown-img' size={40} color="#FFD43B" />
+                        Python
+                        </div>
+                    }
+                        text="Je me perfectionne en Python, le langage de référence de l'intelligence artificielle. Je l'utilise pour concevoir des agents IA, orchestrer des appels aux modèles de langage et automatiser des traitements de données, tout en construisant des back-ends légers et efficaces."
+                />
+                <Collapse
+                    title={
+                        <div className='skills-dropdown-header'>
+                        <SiClaude className='skills-dropdown-img' size={40} color="#D97757" />
+                        Claude (Anthropic)
+                        </div>
+                    }
+                        text="J'utilise Claude, l'IA d'Anthropic, au quotidien comme assistant de développement et pour concevoir des agents intelligents. Je m'appuie sur ses capacités de raisonnement, d'analyse et de génération de code pour accélérer mes projets et automatiser des tâches complexes."
+                />
+                <Collapse
+                    title={
+                        <div className='skills-dropdown-header'>
+                        <SiOpenai className='skills-dropdown-img' size={40} color="#ffffff" />
+                        OpenAI Realtime
+                        </div>
+                    }
+                        text="J'intègre l'API Realtime d'OpenAI dans un projet de conversation en anglais actuellement en développement. Elle permet des échanges vocaux en temps réel, fluides et naturels, pour offrir une expérience d'apprentissage linguistique interactive."
                 />
             </div>
         </section>

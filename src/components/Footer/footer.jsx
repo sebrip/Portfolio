@@ -4,7 +4,7 @@ import './footer.scss'
 const Footer = () => {
     return (
         <footer className='footer'>
-            Copyright &#169; 2023 Sébastien Ripert. All right received.
+            Copyright &#169; {new Date().getFullYear()} Sébastien Ripert. Tous droits réservés.
         </footer>
     )
 }
