@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <a href="https://sebrip33.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+            <a href="https://sebrip.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
                 <img src={logo} alt="logo" className='logo' />
             </a>
             <div className="desktopMenu">

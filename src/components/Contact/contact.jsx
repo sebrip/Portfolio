@@ -59,7 +59,7 @@ function Contact() {
                 <a href="https://www.linkedin.com/in/s%C3%A9bastien-ripert-769106295/" target="_blank" rel="noopener noreferrer">
                     <img src={LinkedinIcon} alt="LinkedIn" className='link' />
                 </a>
-                <a href="https://github.com/sebrip33" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sebrip" target="_blank" rel="noopener noreferrer">
                     <img src={GitHub} alt="GitHub" className='link' />
                 </a>
             </div>
