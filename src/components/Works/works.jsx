@@ -19,7 +19,7 @@ function Works() {
     };
 
     return (
-        <section id='works'>
+        <section id='works' className='reveal'>
             <h2 className='worksTitle'>Réalisations</h2>
             <span className='worksDesc'>Ici, vous découvrirez une sélection de mes réalisations les plus marquantes en tant que développeur.
              Chaque projet est le reflet de ma passion pour le codage et mon engagement à créer des solutions efficaces et innovantes. Bonne exploration !</span>

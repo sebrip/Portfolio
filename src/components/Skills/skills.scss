@@ -9,10 +9,23 @@
     margin: 0 auto;
 
     .skillTitle {
+        width: 100%;
+        text-align: center;
         font-size: 3rem;
         font-weight: 600;
         padding-top: 3rem;
         margin-bottom: 1.5rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            margin: 0.6rem auto 0;
+            background: yellow;
+            border-radius: 2px;
+            box-shadow: 0 0 8px rgba(255, 212, 59, 0.6);
+        }
     }
 
     .skillDesc {
@@ -20,6 +33,7 @@
         font-size: 1rem;
         max-width: 50rem;
         margin: 0 2rem;
+        text-align: center;
     }
 
     .skills-dropdown {

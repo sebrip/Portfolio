@@ -9,7 +9,7 @@ import emailjs from '@emailjs/browser'
 function Contact() {
     
     return (
-        <section id="contact">
+        <section id="contact" className='reveal'>
             <h1 className='contactPageTitle'>Contactez-moi</h1>
             <span className='contactDesc'>Veuillez remplir le formulaire suivant afin de discuter d'éventuelles opportunités de travail.</span>
             <Formik

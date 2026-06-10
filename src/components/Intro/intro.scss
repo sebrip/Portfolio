@@ -7,7 +7,7 @@
     position: relative;
 
     .introContent {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         padding: 2rem;
         font-size: 3rem;
@@ -19,16 +19,28 @@
         .hello {
             font-size: 1.75rem;
             font-weight: 100;
+            animation: introFadeUp 0.7s ease both;
+        }
+
+        .introText {
+            animation: introFadeUp 0.7s ease 0.12s both;
         }
 
         .introName {
             color: yellow;
+            text-shadow: 0 0 18px rgba(255, 212, 59, 0.55);
         }
 
         .introP {
             font-size: medium;
             font-weight: 400;
             letter-spacing: 1px;
+            overflow-wrap: break-word;
+            animation: introFadeUp 0.7s ease 0.24s both;
+        }
+
+        .introText {
+            overflow-wrap: break-word;
         }
 
         .btn {
@@ -40,11 +52,12 @@
             width: 11rem;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            animation: introFadeUp 0.7s ease 0.36s both;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 18px rgb(0 0 0 / 35%);
+            box-shadow: 0 8px 18px rgb(0 0 0 / 35%), 0 0 16px rgba(255, 212, 59, 0.45);
         }
 
         .btnImg {
@@ -86,6 +99,10 @@
 @media screen and (max-width: 480px) {
     #intro {
 
+        .introContent {
+            padding: 1.5rem;
+        }
+
         .my-photo {
             right: -20vw;
         }
@@ -97,6 +114,30 @@
 
         .my-photo {
             right: -40vw;
+        }
+    }
+}
+
+@keyframes introFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #intro .introContent {
+
+        .hello,
+        .introText,
+        .introP,
+        .btn {
+            animation: none;
         }
     }
 }

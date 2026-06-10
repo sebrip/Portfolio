@@ -12,6 +12,17 @@
     .contactPageTitle {
         font-size: 3rem;
         margin-bottom: 1rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            margin: 0.6rem auto 0;
+            background: yellow;
+            border-radius: 2px;
+            box-shadow: 0 0 8px rgba(255, 212, 59, 0.6);
+        }
     }
 
     .contactDesc {
@@ -55,7 +66,7 @@
 
         .submitBtn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 18px rgb(0 0 0 / 35%);
+            box-shadow: 0 8px 18px rgb(0 0 0 / 35%), 0 0 16px rgba(255, 212, 59, 0.45);
         }
     }
 
@@ -69,6 +80,12 @@
             width: 3rem;
             margin: 0 0.75rem;
             cursor: pointer;
+            transition: transform 0.2s ease, filter 0.2s ease;
+
+            &:hover {
+                transform: translateY(-3px) scale(1.08);
+                filter: drop-shadow(0 0 8px rgba(255, 212, 59, 0.6));
+            }
         }
     }
 }

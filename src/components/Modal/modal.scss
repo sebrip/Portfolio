@@ -90,18 +90,6 @@
                     right: 15px;
                 }
             }
-
-            @media screen and (max-width: 600px) {
-                font-size: 30px;
-
-                &.left-arrow {
-                    left: 15px;
-                }
-
-                &.right-arrow {
-                    right: 15px;
-                }
-            }
         }
 
         .slide-number {

@@ -13,6 +13,17 @@
     .worksTitle {
         margin: 1rem 0;
         font-size: 3rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            margin: 0.6rem auto 0;
+            background: yellow;
+            border-radius: 2px;
+            box-shadow: 0 0 8px rgba(255, 212, 59, 0.6);
+        }
     }
 
     .worksDesc {

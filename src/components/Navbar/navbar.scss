@@ -53,7 +53,7 @@
 
         &:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgb(0 0 0 / 30%);
+            box-shadow: 0 6px 16px rgb(0 0 0 / 30%), 0 0 14px rgba(255, 212, 59, 0.4);
         }
 
         .desktopMenuImg {
@@ -95,6 +95,8 @@
     display: none;
     object-fit: cover;
     height: 2.7rem;
+    width: 2.7rem;
+    padding: 0.4rem;
     background-color: yellow;
     border-radius: 10px;
     cursor: pointer;
@@ -109,7 +111,7 @@
 
 @media screen and (max-width: 690px) {
     .mobileMenu {
-        display: flex;
+        display: block;
     }
 
     .desktopMenu {
