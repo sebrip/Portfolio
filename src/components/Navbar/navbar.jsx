@@ -11,9 +11,9 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <a href="https://sebrip.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+            <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className='logoLink'>
                 <img src={logo} alt="logo" className='logo' />
-            </a>
+            </Link>
             <div className="desktopMenu">
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>À propos</Link>
                 <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Mes compétences</Link>
