@@ -10,6 +10,7 @@ const path = require('path');
 const CSP = [
   "default-src 'self'",
   "img-src 'self' data:",
+  "media-src 'self'",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "connect-src 'self' https://api.emailjs.com",
