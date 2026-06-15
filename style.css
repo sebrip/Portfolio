@@ -12,14 +12,54 @@ html {
 }
 
 body {
-    background-image: url("./background/image-digital.webp");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: #0a0e1a;
     color: white;
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+
+/* Fond digital 100% CSS : dégradé bleu nuit + halos lumineux qui dérivent lentement */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        radial-gradient(42% 52% at 18% 22%, rgba(40, 110, 220, 0.30), transparent 70%),
+        radial-gradient(38% 46% at 82% 78%, rgba(255, 212, 59, 0.13), transparent 70%),
+        radial-gradient(46% 56% at 72% 16%, rgba(30, 80, 160, 0.26), transparent 70%),
+        linear-gradient(160deg, #0b1224 0%, #070a14 60%, #05070f 100%);
+    animation: bg-drift 26s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+/* Grille technologique discrète + vignette pour garder le texte lisible */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(120, 160, 220, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(120, 160, 220, 0.05) 1px, transparent 1px),
+        radial-gradient(125% 125% at 50% 50%, transparent 55%, rgba(0, 0, 0, 0.7) 100%);
+    background-size: 46px 46px, 46px 46px, 100% 100%;
+}
+
+@keyframes bg-drift {
+    0% {
+        transform: translate3d(-1.5%, -1%, 0) scale(1.08);
+    }
+
+    50% {
+        transform: translate3d(1.5%, 1.5%, 0) scale(1.12);
+    }
+
+    100% {
+        transform: translate3d(-1%, 1%, 0) scale(1.08);
+    }
 }
 
 /* Apparition au scroll : caché puis révélé quand la section entre dans l'écran */
@@ -46,5 +86,10 @@ body {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+
+    body::before {
+        animation: none;
+        transform: scale(1.08);
     }
 }

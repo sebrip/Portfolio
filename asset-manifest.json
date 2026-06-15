@@ -1,9 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f1b0be38.css",
-    "main.js": "/Portfolio/static/js/main.460b2f9d.js",
+    "main.css": "/Portfolio/static/css/main.44b96f9c.css",
+    "main.js": "/Portfolio/static/js/main.8f517285.js",
+    "static/media/13-test-niveau.png": "/Portfolio/static/media/13-test-niveau.72220ecdd79cea355005.png",
+    "static/media/10-lecon.png": "/Portfolio/static/media/10-lecon.2b1ef5e1cceb46bdc587.png",
+    "static/media/06-conversation.png": "/Portfolio/static/media/06-conversation.6553897d8c67ac9b7066.png",
+    "static/media/phone-10-lecon.png": "/Portfolio/static/media/phone-10-lecon.8f46fcba198d699bf1f1.png",
+    "static/media/phone-06-conversation.png": "/Portfolio/static/media/phone-06-conversation.b51924060a7cbc1645f6.png",
+    "static/media/12-progression.png": "/Portfolio/static/media/12-progression.0e2d99d91a11a40041e3.png",
+    "static/media/18-wordrush.png": "/Portfolio/static/media/18-wordrush.66c59511832b20844cd6.png",
+    "static/media/08-cours.png": "/Portfolio/static/media/08-cours.bbb8e479e80edb3967bd.png",
+    "static/media/15-jeux.png": "/Portfolio/static/media/15-jeux.4bee49d277fd8315db7f.png",
+    "static/media/phone-18-wordrush.png": "/Portfolio/static/media/phone-18-wordrush.7b2cf3a891aba79f7ca7.png",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.40319a2d064fafcad000.pdf",
     "static/media/Kasa-Card.jpg": "/Portfolio/static/media/Kasa-Card.bf01510e840d24280ba9.jpg",
+    "static/media/01-titre.png": "/Portfolio/static/media/01-titre.315fcff8f67b5a3bfd41.png",
     "static/media/Grimoire-card.jpg": "/Portfolio/static/media/Grimoire-card.083d4e8b6530fcc86cbf.jpg",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-about.jpg": "/Portfolio/static/media/Kasa-about.57a9632fbdeb06afcc7c.jpg",
@@ -26,11 +37,11 @@
     "static/media/image-contact.webp": "/Portfolio/static/media/image-contact.08665b05b3b4076eaafd.webp",
     "index.html": "/Portfolio/index.html",
     "static/media/burger-bar.webp": "/Portfolio/static/media/burger-bar.60e8a823d4f990b77309.webp",
-    "main.f1b0be38.css.map": "/Portfolio/static/css/main.f1b0be38.css.map",
-    "main.460b2f9d.js.map": "/Portfolio/static/js/main.460b2f9d.js.map"
+    "main.44b96f9c.css.map": "/Portfolio/static/css/main.44b96f9c.css.map",
+    "main.8f517285.js.map": "/Portfolio/static/js/main.8f517285.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b0be38.css",
-    "static/js/main.460b2f9d.js"
+    "static/css/main.44b96f9c.css",
+    "static/js/main.8f517285.js"
   ]
 }
