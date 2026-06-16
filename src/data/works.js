@@ -34,6 +34,15 @@ import englishPhoneConversation from '../assets/works/english/phone-06-conversat
 import englishPhoneLecon from '../assets/works/english/phone-10-lecon.png'
 import englishPhoneWordrush from '../assets/works/english/phone-18-wordrush.png'
 
+import vbFeed from '../assets/works/villagebook/vb-01-feed.jpg'
+import vbProfile from '../assets/works/villagebook/vb-02-profile.jpg'
+import vbMessages from '../assets/works/villagebook/vb-03-messages.jpg'
+import vbSearch from '../assets/works/villagebook/vb-04-search.jpg'
+import vbComments from '../assets/works/villagebook/vb-05-comments.jpg'
+import vbPhoneFeed from '../assets/works/villagebook/vb-phone-01-feed.jpg'
+import vbPhoneMessages from '../assets/works/villagebook/vb-phone-02-messages.jpg'
+import vbPhoneProfile from '../assets/works/villagebook/vb-phone-03-profile.jpg'
+
 const works = [
   {
     id: 'english',
@@ -69,6 +78,42 @@ const works = [
       englishPhoneConversation,
       englishPhoneLecon,
       englishPhoneWordrush,
+    ],
+  },
+  {
+    id: 'villagebook',
+    title: 'VillageBook',
+    languages: 'React · Express · Prisma',
+    tagline:
+      "Réseau social de village façon Facebook — fil d'actualité, profils, abonnements, messagerie temps réel, recherche.",
+    description:
+      "Réseau social complet pour les habitants d'un village : fil d'actualité, profils et abonnements (follow/unfollow), " +
+      'messagerie en temps réel (messages non lus, badge et sons Web Audio), recherche live de villageois, commentaires ' +
+      "et édition/suppression de publications. Côté serveur : API REST Express/Prisma sécurisée (JWT, helmet, rate-limit), " +
+      "upload d'images avec miniatures (sharp, support HEIC), réinitialisation de mot de passe et confirmation d'email via Brevo. " +
+      'Le tout responsive, pensé mobile-first.',
+    badges: [
+      'React 18 (CRA)',
+      'Express 5 / Prisma 5 / SQLite',
+      'JWT + bcrypt',
+      'Messagerie temps réel',
+      'multer + sharp (miniatures, HEIC)',
+      'helmet + rate-limit · Brevo',
+    ],
+    repo: 'https://github.com/sebrip/Villagebook',
+    // Servie depuis public/ ; PUBLIC_URL gère le sous-chemin GitHub Pages (/Portfolio).
+    video: `${process.env.PUBLIC_URL}/villagebook_visite_guidee.mp4`,
+    cover: vbFeed,
+    images: [
+      vbFeed,
+      vbProfile,
+      vbMessages,
+      vbSearch,
+      vbComments,
+      // Vues mobiles (responsive)
+      vbPhoneFeed,
+      vbPhoneMessages,
+      vbPhoneProfile,
     ],
   },
   {
