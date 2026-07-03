@@ -85,15 +85,15 @@ function MyModal({ isOpen, onRequestClose, work }) {
 
         <div className="slideshow">
           <div className='slider'>
-            {images.map((image, index) => (
+            {/* Seule l'image active est montée : les autres ne sont pas téléchargées */}
+            {images.length > 0 && (
               <img
-                key={index}
-                className={index === currentSlide ? 'Slide active' : 'slide'}
-                src={image}
-                alt={`slide-${index + 1}`}
-                style={{ display: index === currentSlide ? 'block' : 'none' }}
+                key={currentSlide}
+                className='slide active'
+                src={images[currentSlide]}
+                alt={`${work.title} — capture ${currentSlide + 1}`}
               />
-            ))}
+            )}
           </div>
           {/* Affichage des flèches de navigation et le numéro du carrousel */}
           {showArrowsAndNumber && (

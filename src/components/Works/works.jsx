@@ -33,7 +33,7 @@ function Works() {
                     onClick={() => openModal(work)}
                     onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openModal(work); }}
                 >
-                    <img className='work-cover' src={work.cover} alt={work.title} />
+                    <img className='work-cover' src={work.cover} alt={work.title} loading="lazy" />
                     <div className='work-card-description'>
                         <div className='work-card-head'>
                             <h3 className='img-title'>{work.title}</h3>
