@@ -26,7 +26,15 @@ const Navbar = () => {
                     <img src={contactImg} alt="" className="desktopMenuImg" /> Contactez-moi
                 </button>
 
-                <img src={menu} alt="Menu" className='mobileMenu' onClick={() => setShowMenu(!showMenu)} />
+                <button
+                    type="button"
+                    className='mobileMenu'
+                    onClick={() => setShowMenu(!showMenu)}
+                    aria-expanded={showMenu}
+                    aria-label={showMenu ? 'Fermer le menu de navigation' : 'Ouvrir le menu de navigation'}
+                >
+                    <img src={menu} alt="" aria-hidden="true" />
+                </button>
             <div className="navMenu" style={{display: showMenu ? 'flex' : 'none'}}>
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={()=> setShowMenu(false)}>À propos</Link>
                 <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={()=> setShowMenu(false)}>Mes compétences</Link>

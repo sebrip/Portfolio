@@ -23,6 +23,9 @@
         }
 
         .introText {
+            // La balise est un h1 : on neutralise la taille/graisse par défaut du navigateur
+            font-size: inherit;
+            font-weight: inherit;
             animation: introFadeUp 0.7s ease 0.12s both;
         }
 

@@ -12,7 +12,7 @@ function Contact() {
 
     return (
         <section id="contact" className='reveal'>
-            <h1 className='contactPageTitle'>Contactez-moi</h1>
+            <h2 className='contactPageTitle'>Contactez-moi</h2>
             <span className='contactDesc'>Veuillez remplir le formulaire suivant afin de discuter d'éventuelles opportunités de travail.</span>
             <Formik
                 initialValues={{ your_name: '', your_email: '', message: ''}}

@@ -6,24 +6,30 @@
     }
 }
 
+.collapse-heading {
+    // Taille/graisse de l'ancien h2 conservées (le titre est maintenant un h3 + bouton)
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .collapse-header {
     background-color: rgb(30 99 168 / 48%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 0 10px;
+    border: none;
     border-radius: 7px;
     height: 60px;
+    color: white;
+    font: inherit;
+    text-align: left;
     cursor: pointer;
     transition: background-color 0.2s ease;
 
     &:hover {
         background-color: rgb(30 99 168 / 70%);
-    }
-
-    h2 {
-        color: white;
-        font-weight: 400;
     }
 }
 

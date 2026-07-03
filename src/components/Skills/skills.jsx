@@ -12,7 +12,7 @@ import { SiPython, SiClaude, SiOpenai } from 'react-icons/si'
 const Skills = () => {
     return (
         <section id='skills' className='reveal'>
-            <span className='skillTitle'>Mes compétences</span>
+            <h2 className='skillTitle'>Mes compétences</h2>
             <span className='skillDesc'>Développeur web passionné, j'ai suivi une formation intensive où j'ai acquis des compétences en HTML, CSS, JavaScript, React.js et Node.js, ainsi qu'en gestion de projet Agile et en bases de données NoSQL avec MongoDB.
             Toujours curieux et motivé par l'apprentissage, je cherche de nouvelles opportunités pour appliquer et faire progresser mes compétences. Bonne visite !</span>
 

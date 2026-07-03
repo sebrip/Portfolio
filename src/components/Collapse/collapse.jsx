@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect, useId } from 'react'
 import './collapse.scss'
 import ArrowDown from '../../assets/arrowdown.png'
 
@@ -10,6 +10,7 @@ function Collapse({ title, text }) {
   const [height, setHeight] = useState(0)
 
   const contentRef = useRef(null)
+  const contentId = useId()
 
   // Fonction pour basculer l'ouverture/fermeture du Collapse
   const toggleCollapse = () => {
@@ -23,12 +24,21 @@ function Collapse({ title, text }) {
 
   return (
     <div className={`container ${open ? 'open' : ''}`}>
-      <div className="collapse-header" onClick={toggleCollapse}>
-        <h2>{title}</h2>
-        {/* Utiliser ArrowDown en fonction de l'état "open" */}
-        <img src={ArrowDown} alt="" aria-hidden="true" className="arrow-icon" />
-      </div>
+      <h3 className="collapse-heading">
+        <button
+          type="button"
+          className="collapse-header"
+          onClick={toggleCollapse}
+          aria-expanded={open}
+          aria-controls={contentId}
+        >
+          {title}
+          {/* Utiliser ArrowDown en fonction de l'état "open" */}
+          <img src={ArrowDown} alt="" aria-hidden="true" className="arrow-icon" />
+        </button>
+      </h3>
       <div
+        id={contentId}
         className="collapse-text-container"
         style={{ height: `${height}px` }}
         ref={contentRef}
