@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.7fd49d00.css",
-    "main.js": "/Portfolio/static/js/main.4f2bceac.js",
+    "main.js": "/Portfolio/static/js/main.1c232c2f.js",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
@@ -40,16 +40,17 @@
     "static/media/Kasa-mobile-slide.webp": "/Portfolio/static/media/Kasa-mobile-slide.f767c20c13c3d7136f63.webp",
     "static/media/hireme.webp": "/Portfolio/static/media/hireme.39e2cde560b4087dfa0b.webp",
     "static/media/Kasa-mobile-about.webp": "/Portfolio/static/media/Kasa-mobile-about.e6e2d4f98796a5ce1a08.webp",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/Grimoire-create.webp": "/Portfolio/static/media/Grimoire-create.cbabc86efa163545df33.webp",
     "static/media/sophie-logIn.webp": "/Portfolio/static/media/sophie-logIn.f3c8fa4f6f8bd6bdd2c7.webp",
     "static/media/image-contact.webp": "/Portfolio/static/media/image-contact.08665b05b3b4076eaafd.webp",
     "index.html": "/Portfolio/index.html",
     "static/media/burger-bar.webp": "/Portfolio/static/media/burger-bar.60e8a823d4f990b77309.webp",
     "main.7fd49d00.css.map": "/Portfolio/static/css/main.7fd49d00.css.map",
-    "main.4f2bceac.js.map": "/Portfolio/static/js/main.4f2bceac.js.map"
+    "main.1c232c2f.js.map": "/Portfolio/static/js/main.1c232c2f.js.map"
   },
   "entrypoints": [
     "static/css/main.7fd49d00.css",
-    "static/js/main.4f2bceac.js"
+    "static/js/main.1c232c2f.js"
   ]
 }
