@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.633c6e51.css",
-    "main.js": "/Portfolio/static/js/main.519fccce.js",
+    "main.css": "/Portfolio/static/css/main.6c69be0d.css",
+    "main.js": "/Portfolio/static/js/main.7ab1cd7f.js",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
@@ -46,11 +46,11 @@
     "static/media/image-contact.webp": "/Portfolio/static/media/image-contact.08665b05b3b4076eaafd.webp",
     "index.html": "/Portfolio/index.html",
     "static/media/burger-bar.webp": "/Portfolio/static/media/burger-bar.60e8a823d4f990b77309.webp",
-    "main.633c6e51.css.map": "/Portfolio/static/css/main.633c6e51.css.map",
-    "main.519fccce.js.map": "/Portfolio/static/js/main.519fccce.js.map"
+    "main.6c69be0d.css.map": "/Portfolio/static/css/main.6c69be0d.css.map",
+    "main.7ab1cd7f.js.map": "/Portfolio/static/js/main.7ab1cd7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.633c6e51.css",
-    "static/js/main.519fccce.js"
+    "static/css/main.6c69be0d.css",
+    "static/js/main.7ab1cd7f.js"
   ]
 }
