@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;
+    // Respiration sous la grille (l'ancien conteneur sombre faisait office d'espace)
+    padding: 0 1rem 5rem;
 
     .sectionKicker {
         font-family: $mono;
