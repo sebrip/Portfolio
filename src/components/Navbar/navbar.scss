@@ -26,10 +26,32 @@
         cursor: pointer;
     }
 
+    // Monogramme « SR_ » façon prompt de terminal (remplace l'ancien logo bitmap)
     .logo {
-        object-fit: cover;
-        height: 3rem;
-        width: 4rem;
+        display: inline-flex;
+        align-items: baseline;
+        padding: 0.3rem 0.75rem 0.4rem;
+        border-radius: 10px;
+        background: $surface;
+        border: 1px solid $border;
+        font-family: $mono;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: white;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .logoLink:hover .logo,
+    .logoLink:focus-visible .logo {
+        border-color: rgba(255, 212, 59, 0.5);
+        box-shadow: 0 0 14px rgba(255, 212, 59, 0.25);
+    }
+
+    .logoCursor {
+        color: $accent;
+        margin-left: 0.1em;
+        animation: logo-blink 1.4s steps(2, start) infinite;
     }
 
     .desktopMenuListItem {
@@ -163,6 +185,18 @@
 
     &.active {
         color: $accent;
+    }
+}
+
+@keyframes logo-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar .logoCursor {
+        animation: none;
     }
 }
 

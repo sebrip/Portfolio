@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './navbar.scss';
-import logo from '../../assets/logo-portfolio.webp'
 import { Link } from 'react-scroll';
 import { FiSend, FiMenu, FiX } from 'react-icons/fi'
 import cv from '../../assets/CV-Sebastien-Ripert.pdf'
@@ -11,8 +10,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navInner">
-            <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className='logoLink'>
-                <img src={logo} alt="logo" className='logo' />
+            <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className='logoLink' aria-label="Retour à l'accueil">
+                <span className='logo'>SR<span className='logoCursor' aria-hidden='true'>_</span></span>
             </Link>
             <div className="desktopMenu">
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>À propos</Link>
