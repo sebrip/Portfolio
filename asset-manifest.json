@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ead643d1.css",
-    "main.js": "/Portfolio/static/js/main.49b3d46d.js",
+    "main.css": "/Portfolio/static/css/main.979ca0d2.css",
+    "main.js": "/Portfolio/static/js/main.b9f08dc1.js",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
-    "static/media/logo-portfolio.webp": "/Portfolio/static/media/logo-portfolio.ddeb3585f06e0167f447.webp",
     "static/media/Booki-card.webp": "/Portfolio/static/media/Booki-card.0dd1a9aa2b040f5c4130.webp",
     "static/media/Sophie-card.webp": "/Portfolio/static/media/Sophie-card.153bd55abd75c987f109.webp",
     "static/media/vb-02-profile.webp": "/Portfolio/static/media/vb-02-profile.3e3c89a759aaca6e7a7e.webp",
@@ -41,11 +40,11 @@
     "static/media/Grimoire-create.webp": "/Portfolio/static/media/Grimoire-create.cbabc86efa163545df33.webp",
     "static/media/sophie-logIn.webp": "/Portfolio/static/media/sophie-logIn.f3c8fa4f6f8bd6bdd2c7.webp",
     "index.html": "/Portfolio/index.html",
-    "main.ead643d1.css.map": "/Portfolio/static/css/main.ead643d1.css.map",
-    "main.49b3d46d.js.map": "/Portfolio/static/js/main.49b3d46d.js.map"
+    "main.979ca0d2.css.map": "/Portfolio/static/css/main.979ca0d2.css.map",
+    "main.b9f08dc1.js.map": "/Portfolio/static/js/main.b9f08dc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ead643d1.css",
-    "static/js/main.49b3d46d.js"
+    "static/css/main.979ca0d2.css",
+    "static/js/main.b9f08dc1.js"
   ]
 }
