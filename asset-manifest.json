@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6c69be0d.css",
-    "main.js": "/Portfolio/static/js/main.7ab1cd7f.js",
+    "main.css": "/Portfolio/static/css/main.34ccd600.css",
+    "main.js": "/Portfolio/static/js/main.49b3d46d.js",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
@@ -30,7 +30,6 @@
     "static/media/sophie-modal.webp": "/Portfolio/static/media/sophie-modal.41a4f7b91394e37b07aa.webp",
     "static/media/15-jeux.webp": "/Portfolio/static/media/15-jeux.120bb7c7ed5429c94bbc.webp",
     "static/media/vb-03-messages.webp": "/Portfolio/static/media/vb-03-messages.1a7d87024bb726e34599.webp",
-    "static/media/image-numerique.webp": "/Portfolio/static/media/image-numerique.06a514a16623c273dcbc.webp",
     "static/media/01-titre.webp": "/Portfolio/static/media/01-titre.45546d9f25f5aaf98875.webp",
     "static/media/vb-phone-03-profile.webp": "/Portfolio/static/media/vb-phone-03-profile.244378f0ef3288fe17bb.webp",
     "static/media/vb-phone-01-feed.webp": "/Portfolio/static/media/vb-phone-01-feed.946a1a7f8a29434e875e.webp",
@@ -38,19 +37,15 @@
     "static/media/Booki-mobile.webp": "/Portfolio/static/media/Booki-mobile.d37366c002959a7f7912.webp",
     "static/media/vb-phone-02-messages.webp": "/Portfolio/static/media/vb-phone-02-messages.da51a726065457880d84.webp",
     "static/media/Kasa-mobile-slide.webp": "/Portfolio/static/media/Kasa-mobile-slide.f767c20c13c3d7136f63.webp",
-    "static/media/hireme.webp": "/Portfolio/static/media/hireme.39e2cde560b4087dfa0b.webp",
     "static/media/Kasa-mobile-about.webp": "/Portfolio/static/media/Kasa-mobile-about.e6e2d4f98796a5ce1a08.webp",
-    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/Grimoire-create.webp": "/Portfolio/static/media/Grimoire-create.cbabc86efa163545df33.webp",
     "static/media/sophie-logIn.webp": "/Portfolio/static/media/sophie-logIn.f3c8fa4f6f8bd6bdd2c7.webp",
-    "static/media/image-contact.webp": "/Portfolio/static/media/image-contact.08665b05b3b4076eaafd.webp",
     "index.html": "/Portfolio/index.html",
-    "static/media/burger-bar.webp": "/Portfolio/static/media/burger-bar.60e8a823d4f990b77309.webp",
-    "main.6c69be0d.css.map": "/Portfolio/static/css/main.6c69be0d.css.map",
-    "main.7ab1cd7f.js.map": "/Portfolio/static/js/main.7ab1cd7f.js.map"
+    "main.34ccd600.css.map": "/Portfolio/static/css/main.34ccd600.css.map",
+    "main.49b3d46d.js.map": "/Portfolio/static/js/main.49b3d46d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c69be0d.css",
-    "static/js/main.7ab1cd7f.js"
+    "static/css/main.34ccd600.css",
+    "static/js/main.49b3d46d.js"
   ]
 }
