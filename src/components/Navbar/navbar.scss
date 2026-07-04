@@ -26,30 +26,58 @@
         cursor: pointer;
     }
 
-    // Monogramme « SR_ » façon prompt de terminal (remplace l'ancien logo bitmap)
+    // Monogramme « SR_ » façon prompt de terminal (remplace l'ancien logo bitmap).
+    // Bordure en dégradé doré (double background padding-box/border-box) + micro-grille en écho au fond du site.
     .logo {
+        position: relative;
         display: inline-flex;
         align-items: baseline;
-        padding: 0.3rem 0.75rem 0.4rem;
-        border-radius: 10px;
-        background: $surface;
-        border: 1px solid $border;
+        padding: 0.35rem 0.8rem 0.45rem;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        background:
+            linear-gradient(160deg, rgba(22, 28, 45, 0.95), rgba(9, 12, 22, 0.95)) padding-box,
+            linear-gradient(135deg, rgba(255, 212, 59, 0.85), rgba(255, 212, 59, 0.12) 45%, rgba(120, 160, 220, 0.35)) border-box;
         font-family: $mono;
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         font-weight: 700;
-        letter-spacing: 0.04em;
-        color: white;
-        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        letter-spacing: 0.02em;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+        transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: inherit;
+            background-image:
+                linear-gradient(rgba(120, 160, 220, 0.10) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(120, 160, 220, 0.10) 1px, transparent 1px);
+            background-size: 9px 9px;
+            pointer-events: none;
+        }
+    }
+
+    .logoText {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(120deg, #ffe27a, $accent 45%, #ffb63b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .logoLink:hover .logo,
     .logoLink:focus-visible .logo {
-        border-color: rgba(255, 212, 59, 0.5);
-        box-shadow: 0 0 14px rgba(255, 212, 59, 0.25);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), 0 0 16px rgba(255, 212, 59, 0.3);
     }
 
     .logoCursor {
-        color: $accent;
+        position: relative;
+        z-index: 1;
+        color: rgba(233, 237, 246, 0.9);
         margin-left: 0.1em;
         animation: logo-blink 1.4s steps(2, start) infinite;
     }

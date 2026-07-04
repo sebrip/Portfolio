@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navInner">
             <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className='logoLink' aria-label="Retour à l'accueil">
-                <span className='logo'>SR<span className='logoCursor' aria-hidden='true'>_</span></span>
+                <span className='logo'><span className='logoText'>SR</span><span className='logoCursor' aria-hidden='true'>_</span></span>
             </Link>
             <div className="desktopMenu">
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>À propos</Link>
