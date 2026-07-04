@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 #intro {
     height: calc(100vh - 4rem);
     width: 100%;
@@ -10,7 +12,7 @@
         height: 100%;
         width: 100%;
         padding: 2rem;
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 5.5vw, 4rem);
         font-weight: 700;
         display: flex;
         flex-direction: column;
@@ -18,7 +20,8 @@
 
         .hello {
             font-size: 1.75rem;
-            font-weight: 100;
+            font-weight: 300;
+            font-family: $mono;
             animation: introFadeUp 0.7s ease both;
         }
 
@@ -30,8 +33,12 @@
         }
 
         .introName {
-            color: yellow;
-            text-shadow: 0 0 18px rgba(255, 212, 59, 0.55);
+            // Typo expressive sobre : dégradé chaud clippé dans le texte + halo léger
+            background: linear-gradient(120deg, #ffe27a, $accent 45%, #ffb63b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 14px rgba(255, 212, 59, 0.35));
         }
 
         .introP {
@@ -47,7 +54,9 @@
         }
 
         .btn {
-            background: white;
+            background: $accent;
+            color: #1a1500;
+            font-weight: 600;
             margin: 1rem 0;
             padding: 0.75rem 1.5rem;
             border: none;
@@ -95,6 +104,14 @@
 
         .my-photo {
             right: -10vw;
+            // Sur mobile la photo passe sous le texte : on l'estompe pour garder le contraste
+            opacity: 0.35;
+        }
+
+        .hello,
+        .introText,
+        .introP {
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
         }
     }
 }

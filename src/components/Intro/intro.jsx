@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.scss';
 import Photo from '../../assets/photo-sebastien2.webp'
-import btnImg from '../../assets/hireme.webp'
+import { FiBriefcase } from 'react-icons/fi'
 
 const Intro = () => {
     return (
@@ -13,7 +13,7 @@ const Intro = () => {
                 <button className="btn" onClick={() => {
                     document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
                 }}>
-                    <img src={btnImg} alt='Valise' className='btnImg'/> Recrutez-moi
+                    <FiBriefcase aria-hidden="true" className='btnImg'/> Recrutez-moi
                 </button>
             </div>
             <img src={Photo} alt="Sébastien Ripert" className="my-photo" />

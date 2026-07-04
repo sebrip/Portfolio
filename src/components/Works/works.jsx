@@ -20,13 +20,14 @@ function Works() {
 
     return (
         <section id='works' className='reveal'>
+            <p className='sectionKicker'>02 — Réalisations</p>
             <h2 className='worksTitle'>Réalisations</h2>
             <span className='worksDesc'>Ici, vous découvrirez une sélection de mes réalisations les plus marquantes en tant que développeur.
              Chaque projet est le reflet de ma passion pour le codage et mon engagement à créer des solutions efficaces et innovantes. Bonne exploration !</span>
              <div className='work-list-container'>
                 {works.map((work) => (
                 <div
-                    className='work-card'
+                    className={`work-card${work.featured ? ' featured' : ''}`}
                     key={work.id}
                     role="button"
                     tabIndex={0}

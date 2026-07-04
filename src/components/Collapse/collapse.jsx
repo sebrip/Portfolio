@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useId } from 'react'
 import './collapse.scss'
-import ArrowDown from '../../assets/arrowdown.png'
+import { FiChevronDown } from 'react-icons/fi'
 
 function Collapse({ title, text }) {
   // État pour contrôler l'ouverture/fermeture du Collapse
@@ -33,8 +33,7 @@ function Collapse({ title, text }) {
           aria-controls={contentId}
         >
           {title}
-          {/* Utiliser ArrowDown en fonction de l'état "open" */}
-          <img src={ArrowDown} alt="" aria-hidden="true" className="arrow-icon" />
+          <FiChevronDown aria-hidden="true" className="arrow-icon" />
         </button>
       </h3>
       <div

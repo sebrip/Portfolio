@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
@@ -10,20 +12,18 @@
     text-align: center;
     padding: 0 1rem;
 
-    .worksTitle {
-        margin: 1rem 0;
-        font-size: 3rem;
+    .sectionKicker {
+        font-family: $mono;
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $accent;
+        margin: 0;
+    }
 
-        &::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 4px;
-            margin: 0.6rem auto 0;
-            background: yellow;
-            border-radius: 2px;
-            box-shadow: 0 0 8px rgba(255, 212, 59, 0.6);
-        }
+    .worksTitle {
+        margin: 0.5rem 0 1rem;
+        font-size: 3rem;
     }
 
     .worksDesc {
@@ -32,39 +32,37 @@
     }
 
     .work-list-container {
-        padding: 40px;
-        border-radius: 25px;
         margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
+        gap: 1.5rem;
         width: 100%;
         max-width: 65rem;
-        background-color: rgb(0 0 0 / 75%);
 
         .work-card {
-            height: 60vh;
             display: flex;
             flex-direction: column;
-            border-radius: 10px;
-            background-color: rgb(17 60 102 / 75%);
+            border-radius: 14px;
+            background: $surface;
+            border: 1px solid $border;
             cursor: pointer;
-            margin: 0.5rem;
             overflow: hidden;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 
             .work-cover {
                 width: 100%;
-                flex: 1;
-                min-height: 0;
+                aspect-ratio: 16 / 10;
                 object-fit: cover;
-                border-radius: 10px 10px 0 0;
+                transition: transform 0.3s ease;
             }
 
             .work-card-description {
-                flex-shrink: 0;
-                padding: 10px 20px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                padding: 14px 20px 18px;
 
                 .work-card-head {
                     display: flex;
@@ -86,15 +84,16 @@
                         width: 34px;
                         height: 3px;
                         margin-top: 0.35rem;
-                        background: yellow;
+                        background: $accent;
                         border-radius: 2px;
                         box-shadow: 0 0 6px rgba(255, 212, 59, 0.6);
                     }
                 }
 
                 .work-languages {
-                    font-size: 0.85rem;
-                    font-weight: 300;
+                    font-family: $mono;
+                    font-size: 0.8rem;
+                    font-weight: 400;
                     white-space: nowrap;
                     opacity: 0.75;
                 }
@@ -121,6 +120,7 @@
                         border: 1px solid rgba(255, 212, 59, 0.4);
                         border-radius: 999px;
                         padding: 0.15rem 0.6rem;
+                        font-family: $mono;
                         font-size: 0.7rem;
                     }
                 }
@@ -128,14 +128,55 @@
         }
 
         .work-card:hover {
-            transform: translateY(-6px) scale(1.02);
+            transform: translateY(-4px);
+            border-color: rgba(255, 212, 59, 0.5);
             box-shadow: 0 12px 28px rgb(0 0 0 / 45%);
+
+            .work-cover {
+                transform: scale(1.04);
+            }
         }
 
         .work-card:focus-visible {
-            outline: 3px solid yellow;
+            outline: 3px solid $accent;
             outline-offset: 3px;
         }
+
+        // Bento : les projets vedettes (IA) occupent toute la largeur, image à gauche
+        .work-card.featured {
+            grid-column: 1 / -1;
+            flex-direction: row;
+            text-align: left;
+
+            .work-cover {
+                width: 55%;
+                aspect-ratio: 16 / 9;
+                align-self: stretch;
+                height: auto;
+            }
+
+            .work-card-description {
+                padding: 20px 28px;
+
+                // Le titre et le tag langages s'empilent : plus de place, plus de débordement
+                .work-card-head {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.35rem;
+                }
+
+                .work-languages {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #works .work-list-container .work-card,
+    #works .work-list-container .work-card .work-cover {
+        transition: none;
     }
 }
 
@@ -145,10 +186,8 @@
         .work-list-container {
 
             .work-card {
-                height: 45vh;
 
                 .work-card-description {
-                    margin-top: 5px;
 
                     .img-title {
                         font-size: 1.6rem;
@@ -168,12 +207,16 @@
 
         .work-list-container {
             grid-template-columns: repeat(1, 1fr);
-            gap: 10px;
-            padding-left: 30px;
-            padding-right: 30px;
+            gap: 1rem;
 
-            .work-card {
-                margin: 10px 0;
+            // Plus de place pour une rangée : les vedettes redeviennent des cartes classiques
+            .work-card.featured {
+                flex-direction: column;
+
+                .work-cover {
+                    width: 100%;
+                    aspect-ratio: 16 / 10;
+                }
             }
         }
     }

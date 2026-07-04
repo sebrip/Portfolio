@@ -47,6 +47,7 @@ const works = [
   {
     id: 'english',
     title: 'English SpeakApp',
+    featured: true,
     languages: 'Python · OpenAI Realtime',
     tagline: 'Apprends l\'anglais en parlant pour de vrai — conversations vocales en temps réel.',
     description:
@@ -83,6 +84,7 @@ const works = [
   {
     id: 'villagebook',
     title: 'VillageBook',
+    featured: true,
     languages: 'React · Express · Prisma',
     tagline:
       "Réseau social de village façon Facebook — fil d'actualité, profils, abonnements, messagerie temps réel, recherche.",

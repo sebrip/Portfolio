@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 #skills {
     overflow: hidden;
     width: 100%;
@@ -8,24 +10,22 @@
     justify-content: center;
     margin: 0 auto;
 
+    .sectionKicker {
+        font-family: $mono;
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $accent;
+        padding-top: 3rem;
+        margin: 0;
+    }
+
     .skillTitle {
         width: 100%;
         text-align: center;
         font-size: 3rem;
         font-weight: 600;
-        padding-top: 3rem;
-        margin-bottom: 1.5rem;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 4px;
-            margin: 0.6rem auto 0;
-            background: yellow;
-            border-radius: 2px;
-            box-shadow: 0 0 8px rgba(255, 212, 59, 0.6);
-        }
+        margin: 0.5rem 0 1.5rem;
     }
 
     .skillDesc {
@@ -53,7 +53,7 @@
 @media screen and (max-width: 680px) {
     #skills {
 
-        .skillTitle {
+        .sectionKicker {
             padding-top: 0;
         }
 
@@ -72,7 +72,6 @@
 
         .skillTitle {
             font-size: 2.5rem;
-            padding-top: 0;
         }
     }
 }

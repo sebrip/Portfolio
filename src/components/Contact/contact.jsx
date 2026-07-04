@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import './contact.scss'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup';
-import GitHub from '../../assets/github-mark.png'
-import LinkedinIcon from '../../assets/linkedin.png'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 
 function Contact() {
@@ -12,6 +11,7 @@ function Contact() {
 
     return (
         <section id="contact" className='reveal'>
+            <p className='sectionKicker'>03 — Contact</p>
             <h2 className='contactPageTitle'>Contactez-moi</h2>
             <span className='contactDesc'>Veuillez remplir le formulaire suivant afin de discuter d'éventuelles opportunités de travail.</span>
             <Formik
@@ -69,11 +69,11 @@ function Contact() {
             </Formik>
 
             <div className='links'>
-                <a href="https://github.com/sebrip" target="_blank" rel="noopener noreferrer">
-                    <img src={GitHub} alt="GitHub" className='link' />
+                <a href="https://github.com/sebrip" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <FaGithub className='link' aria-hidden="true" />
                 </a>
-                <a href="https://www.linkedin.com/in/sebastien-ripert" target="_blank" rel="noopener noreferrer">
-                    <img src={LinkedinIcon} alt="LinkedIn" className='link' />
+                <a href="https://www.linkedin.com/in/sebastien-ripert" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <FaLinkedin className='link' aria-hidden="true" />
                 </a>
             </div>
         </section>

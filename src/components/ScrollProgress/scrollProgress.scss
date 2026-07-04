@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 .scrollProgressContainer {
     position: fixed;
     top: 0;
@@ -11,7 +13,7 @@
     .scrollProgressBar {
         height: 100%;
         width: 0;
-        background: linear-gradient(90deg, #ffd43b, yellow);
+        background: linear-gradient(90deg, #ffb63b, $accent);
         box-shadow: 0 0 10px rgba(255, 212, 59, 0.7);
         transition: width 0.1s linear;
     }
