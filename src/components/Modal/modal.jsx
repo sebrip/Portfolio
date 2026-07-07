@@ -157,6 +157,19 @@ function MyModal({ isOpen, onRequestClose, work }) {
         {isRich && (
           <footer className="modal-info">
             <p className="modal-description">{work.description}</p>
+            {work.eco && (
+              <section className="modal-eco" aria-label="Éco-conception">
+                <h4 className="modal-eco-title">
+                  <span aria-hidden="true">🌱</span> {work.eco.title}
+                </h4>
+                {work.eco.intro && <p className="modal-eco-intro">{work.eco.intro}</p>}
+                <ul className="modal-eco-points">
+                  {work.eco.points.map((p) => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
             {work.badges && (
               <ul className="modal-badges">
                 {work.badges.map((b) => (

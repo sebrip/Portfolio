@@ -18,7 +18,7 @@ const Skills = () => {
                         HTML
                         </div>
                     }
-                        text="La base de tous mes projets : un HTML sémantique et accessible — hiérarchie de titres, vraies balises interactives, attributs ARIA. Ce portfolio en est l'exemple : navigable au clavier et compatible avec les lecteurs d'écran."
+                        text="La base de tous mes projets : un HTML sémantique et accessible — hiérarchie de titres, vraies balises interactives, attributs ARIA. Ce portfolio est navigable au clavier et compatible avec les lecteurs d'écran, et JobHunter-AI atteint 96/100 en accessibilité Lighthouse."
                 />
                 <Collapse
                     title={
@@ -27,7 +27,7 @@ const Skills = () => {
                         CSS
                         </div>
                     }
-                        text="CSS et SASS pour des interfaces soignées et responsive, pensées mobile-first : le thème sombre et les animations au scroll de ce portfolio, les maquettes intégrées au pixel près de Booki et Kasa, l'interface de VillageBook."
+                        text="CSS et SASS pour des interfaces soignées et responsive, pensées mobile-first : le thème sombre et les animations au scroll de ce portfolio, les maquettes intégrées au pixel près de Booki et Kasa, et les interfaces de VillageBook et JobHunter-AI (thème sombre, mobile complet)."
                 />
                 <Collapse
                     title={
@@ -45,7 +45,7 @@ const Skills = () => {
                         React
                         </div>
                     }
-                        text="Ma bibliothèque front de référence : ce portfolio, Kasa et VillageBook sont construits en React — composants réutilisables, hooks, routing, formulaires validés avec Formik/Yup."
+                        text="Ma bibliothèque front de référence : ce portfolio, Kasa et VillageBook sont construits en React, et l'interface de JobHunter-AI en React 19 + Vite, sans aucune librairie de composants UI — composants réutilisables, hooks, routing, formulaires validés avec Formik/Yup."
                 />
                 <Collapse
                     title={
@@ -63,7 +63,7 @@ const Skills = () => {
                         MongoDB
                         </div>
                     }
-                        text="Base NoSQL du back-end de Mon Vieux Grimoire (Mongoose : modèles, notation moyenne calculée côté serveur). J'utilise aussi le SQL avec Prisma sur VillageBook — je choisis la base adaptée à chaque projet."
+                        text="Base NoSQL du back-end de Mon Vieux Grimoire (Mongoose : modèles, notation moyenne calculée côté serveur). J'utilise aussi le SQL avec Prisma sur VillageBook et SQLite en direct sur JobHunter-AI — je choisis la base adaptée à chaque projet."
                 />
                 <Collapse
                     title={
@@ -72,7 +72,7 @@ const Skills = () => {
                         Python
                         </div>
                     }
-                        text="Mon langage pour l'IA : le back-end d'English SpeakApp est écrit en Python (Starlette/ASGI, WebSocket vers l'API OpenAI Realtime), et c'est aussi la base de JobHunter-AI, mon agent de recherche d'emploi en cours de finalisation."
+                        text="Mon langage pour l'IA : le back-end d'English SpeakApp est écrit en Python (Starlette/ASGI, WebSocket vers l'API OpenAI Realtime), et c'est aussi celui de JobHunter-AI, mon agent de veille d'emploi (FastAPI, stdlib uniquement), que j'utilise en conditions réelles pour ma propre recherche."
                 />
                 <Collapse
                     title={
@@ -81,7 +81,7 @@ const Skills = () => {
                         Claude (Anthropic)
                         </div>
                     }
-                        text="Claude (Anthropic) est mon partenaire de développement au quotidien via Claude Code, et le moteur de mes agents IA : je conçois des rôles persistants avec mémoire et outils pour automatiser des tâches réelles, comme ma veille d'offres d'emploi."
+                        text="Claude (Anthropic) est mon partenaire de développement au quotidien via Claude Code, et le moteur de mes agents IA : les 4 agents de JobHunter-AI (sourcing, matching, rédaction, coach) tournent sur l'API Claude, avec des appels conditionnels et plafonnés pour maîtriser coûts et empreinte."
                 />
                 <Collapse
                     title={

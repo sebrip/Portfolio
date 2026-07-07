@@ -253,6 +253,52 @@
             user-select: text;
         }
 
+        /* Section éco-conception (green code) — panneau sobre, liste alignée à gauche */
+        .modal-eco {
+            margin: 1.4rem 0 0;
+            padding: 1.1rem 1.3rem;
+            text-align: left;
+            background: $surface;
+            border: 1px solid $border;
+            border-left: 3px solid #7bc96f;
+            border-radius: 12px;
+            user-select: text;
+
+            .modal-eco-title {
+                margin: 0;
+                font-size: 1.05rem;
+                font-weight: 600;
+                color: #a5d6a7;
+            }
+
+            .modal-eco-intro {
+                margin: 0.6rem 0 0;
+                font-weight: 300;
+                font-size: 0.92rem;
+                color: rgba(255, 255, 255, 0.85);
+                line-height: 1.55;
+            }
+
+            .modal-eco-points {
+                margin: 0.7rem 0 0;
+                padding-left: 1.1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.45rem;
+
+                li {
+                    font-weight: 300;
+                    font-size: 0.9rem;
+                    line-height: 1.55;
+                    color: rgba(255, 255, 255, 0.88);
+
+                    &::marker {
+                        color: #7bc96f;
+                    }
+                }
+            }
+        }
+
         .modal-badges {
             list-style: none;
             padding: 0;

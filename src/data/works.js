@@ -22,6 +22,19 @@ import grimoireCard from '../assets/works/Grimoire-card.webp'
 import grimoireCreate from '../assets/works/Grimoire-create.webp'
 import grimoireRate from '../assets/works/Grimoire-rate.webp'
 
+import jhConnexion from '../assets/works/jobhunter/01-ecran-connexion.webp'
+import jhInscription from '../assets/works/jobhunter/02-inscription-profil-matching.webp'
+import jhDashboard from '../assets/works/jobhunter/03-tableau-de-bord-clair.webp'
+import jhExpirees from '../assets/works/jobhunter/04-detection-offres-expirees.webp'
+import jhDashboardCyber from '../assets/works/jobhunter/05-tableau-de-bord-profil-cyber.webp'
+import jhProfil from '../assets/works/jobhunter/06-mon-profil-jauge-force.webp'
+import jhCoach from '../assets/works/jobhunter/07-coach-ia-conseils.webp'
+import jhMarcheCache from '../assets/works/jobhunter/08-marche-cache-la-bonne-boite.webp'
+import jhSombre from '../assets/works/jobhunter/09-theme-sombre.webp'
+import jhMobile from '../assets/works/jobhunter/10-mobile-390px.webp'
+import jhCarteMatch from '../assets/works/jobhunter/11-carte-match-90.webp'
+import jhLettre from '../assets/works/jobhunter/12-lettre-ia-modale.webp'
+
 import englishTitre from '../assets/works/english/01-titre.webp'
 import englishConversation from '../assets/works/english/06-conversation.webp'
 import englishCours from '../assets/works/english/08-cours.webp'
@@ -44,6 +57,62 @@ import vbPhoneMessages from '../assets/works/villagebook/vb-phone-02-messages.we
 import vbPhoneProfile from '../assets/works/villagebook/vb-phone-03-profile.webp'
 
 const works = [
+  {
+    id: 'jobhunter',
+    title: 'JobHunter-AI',
+    featured: true,
+    languages: 'Python · React · Claude',
+    tagline:
+      "Agent de veille d'emploi multi-utilisateur : 4 agents IA analysent les offres et rédigent les candidatures — utilisé en conditions réelles pour ma propre recherche.",
+    description:
+      "L'application collecte les offres de 4 sources publiques (France Travail, Adzuna, Remotive, Jooble), les déduplique à 2 niveaux, " +
+      'puis 4 agents IA Claude prennent le relais : Sourcing enrichit les offres incomplètes, Matching note chaque offre sur 100 contre ' +
+      "le profil du candidat (stack, métiers, zone, salaire, télétravail), Rédacteur écrit dès 70/100 une lettre de motivation personnalisée " +
+      "(éditable, régénérable FR/EN, exports PDF et Word), et Coach donne des conseils de carrière face au vivier réel de 400+ offres. " +
+      "L'app surveille aussi l'après : les offres disparues de leur source sont marquées expirées, et un module « marché caché » liste " +
+      'les entreprises voisines susceptibles de recruter sans annonce (API La Bonne Boîte). ' +
+      'Sécurité faite main selon les normes OWASP : PBKDF2 600 000 itérations, sessions à jeton 256 bits hashé en base, cookie HttpOnly ' +
+      'SameSite=Strict, anti-CSRF double, anti-bruteforce et isolation stricte entre comptes. Les visuels montrent des comptes de démonstration.',
+    badges: [
+      '4 agents IA Claude',
+      'React 19 + Vite',
+      'FastAPI + SQLite (Python stdlib)',
+      'Sécurité OWASP faite main',
+      '4 sources d’offres + dédup 2 niveaux',
+      'Éco-conception mesurée',
+    ],
+    eco: {
+      title: 'Éco-conception mesurée',
+      intro:
+        'La frugalité est une contrainte de conception depuis le premier jour — chaque appel IA coûte. Chiffres mesurés sur le build de production :',
+      points: [
+        'Appels IA conditionnels et plafonnés : enrichissement seulement si une donnée manque, 50 offres notées max par run, cooldowns sur tous les endpoints IA.',
+        'Rien n’est analysé deux fois : déduplication à 2 niveaux, offres périmées jamais re-notées, rejets mémorisés (une offre écartée ne coûte plus jamais un appel).',
+        'Front sobre : 552 → 183 Ko transférés au 1er chargement (−67 %), bundle JS 206 → 77 Ko gzip (−62 %), jsPDF chargé uniquement au clic « Exporter en PDF ».',
+        'Fonte Inter auto-hébergée et sous-ensemble latin/français : 344 → 101 Ko (−71 %), sans CDN. Aucune librairie UI, icônes SVG inline.',
+        'Back en Python stdlib (urllib, sqlite3 — zéro dépendance HTTP), base SQLite locale, caches mémoire sur les appels géo.',
+        'Lighthouse : Accessibilité 96 · Bonnes pratiques 96 · SEO 91.',
+      ],
+    },
+    // Servie depuis public/ ; PUBLIC_URL gère le sous-chemin GitHub Pages (/Portfolio).
+    video: `${process.env.PUBLIC_URL}/jobhunter_ai_visite_guidee.mp4`,
+    cover: jhDashboard,
+    images: [
+      jhDashboard,
+      jhCarteMatch,
+      jhLettre,
+      jhCoach,
+      jhExpirees,
+      jhMarcheCache,
+      jhDashboardCyber,
+      jhProfil,
+      jhInscription,
+      jhConnexion,
+      jhSombre,
+      // Vue mobile (responsive)
+      jhMobile,
+    ],
+  },
   {
     id: 'english',
     title: 'English SpeakApp',
