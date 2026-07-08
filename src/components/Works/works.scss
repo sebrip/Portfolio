@@ -143,6 +143,25 @@
             outline-offset: 3px;
         }
 
+        // Projet phare : bordure en dégradé doré (même technique double background
+        // que le logo SR_) + halo statique, renforcé au survol par la transition
+        // box-shadow déjà déclarée sur .work-card. Le dégradé remplace la bordure
+        // grise, d'où border-color transparent — y compris au survol.
+        // ⚠️ La carte porte aussi .featured (même spécificité, déclarée après) :
+        // ne jamais donner de `background` à .featured, il écraserait le dégradé.
+        .work-card.spotlight {
+            border-color: transparent;
+            background:
+                linear-gradient(160deg, rgba(22, 28, 45, 0.92), rgba(9, 12, 22, 0.92)) padding-box,
+                linear-gradient(135deg, rgba(255, 212, 59, 0.9), rgba(255, 212, 59, 0.28) 45%, rgba(255, 212, 59, 0.9)) border-box;
+            box-shadow: 0 0 24px rgba(255, 212, 59, 0.2), 0 10px 28px rgb(0 0 0 / 40%);
+        }
+
+        .work-card.spotlight:hover {
+            border-color: transparent;
+            box-shadow: 0 0 32px rgba(255, 212, 59, 0.3), 0 14px 32px rgb(0 0 0 / 50%);
+        }
+
         // Bento : les projets vedettes (IA) occupent toute la largeur, image à gauche
         .work-card.featured {
             grid-column: 1 / -1;

@@ -61,6 +61,7 @@ const works = [
     id: 'jobhunter',
     title: 'JobHunter-AI',
     featured: true,
+    spotlight: true,
     languages: 'Python · React · Claude',
     tagline:
       "Agent de veille d'emploi multi-utilisateur : 4 agents IA analysent les offres et rédigent les candidatures — utilisé en conditions réelles pour ma propre recherche.",

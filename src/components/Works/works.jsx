@@ -27,7 +27,7 @@ function Works() {
              <div className='work-list-container'>
                 {works.map((work) => (
                 <div
-                    className={`work-card${work.featured ? ' featured' : ''}`}
+                    className={`work-card${work.featured ? ' featured' : ''}${work.spotlight ? ' spotlight' : ''}`}
                     key={work.id}
                     role="button"
                     tabIndex={0}
