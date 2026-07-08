@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.6a23c6cd.css",
-    "main.js": "/Portfolio/static/js/main.78a7f74a.js",
-    "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
+    "main.js": "/Portfolio/static/js/main.c18f8a54.js",
+    "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ef2100771b1b6f8639c7.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
     "static/media/07-coach-ia-conseils.webp": "/Portfolio/static/media/07-coach-ia-conseils.43c18c30e3417fac4ea4.webp",
@@ -53,10 +53,10 @@
     "static/media/sophie-logIn.webp": "/Portfolio/static/media/sophie-logIn.f3c8fa4f6f8bd6bdd2c7.webp",
     "index.html": "/Portfolio/index.html",
     "main.6a23c6cd.css.map": "/Portfolio/static/css/main.6a23c6cd.css.map",
-    "main.78a7f74a.js.map": "/Portfolio/static/js/main.78a7f74a.js.map"
+    "main.c18f8a54.js.map": "/Portfolio/static/js/main.c18f8a54.js.map"
   },
   "entrypoints": [
     "static/css/main.6a23c6cd.css",
-    "static/js/main.78a7f74a.js"
+    "static/js/main.c18f8a54.js"
   ]
 }
