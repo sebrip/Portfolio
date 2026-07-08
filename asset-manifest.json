@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.09714e69.css",
-    "main.js": "/Portfolio/static/js/main.5c36eb29.js",
+    "main.css": "/Portfolio/static/css/main.6a23c6cd.css",
+    "main.js": "/Portfolio/static/js/main.78a7f74a.js",
     "static/media/CV-Sebastien-Ripert.pdf": "/Portfolio/static/media/CV-Sebastien-Ripert.ed16aacd2e5dd3dce773.pdf",
     "static/media/photo-sebastien2.webp": "/Portfolio/static/media/photo-sebastien2.726ef8033185d70e20ef.webp",
     "static/media/Kasa-Card.webp": "/Portfolio/static/media/Kasa-Card.a2e59ac53109a42b53f6.webp",
@@ -52,11 +52,11 @@
     "static/media/Grimoire-create.webp": "/Portfolio/static/media/Grimoire-create.cbabc86efa163545df33.webp",
     "static/media/sophie-logIn.webp": "/Portfolio/static/media/sophie-logIn.f3c8fa4f6f8bd6bdd2c7.webp",
     "index.html": "/Portfolio/index.html",
-    "main.09714e69.css.map": "/Portfolio/static/css/main.09714e69.css.map",
-    "main.5c36eb29.js.map": "/Portfolio/static/js/main.5c36eb29.js.map"
+    "main.6a23c6cd.css.map": "/Portfolio/static/css/main.6a23c6cd.css.map",
+    "main.78a7f74a.js.map": "/Portfolio/static/js/main.78a7f74a.js.map"
   },
   "entrypoints": [
-    "static/css/main.09714e69.css",
-    "static/js/main.5c36eb29.js"
+    "static/css/main.6a23c6cd.css",
+    "static/js/main.78a7f74a.js"
   ]
 }
